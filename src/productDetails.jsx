@@ -28,7 +28,7 @@ const handleClick = async (productName, price) => {
     const stripe = await stripePromise;
 
     // Send a request to the backend to create a checkout session
-    const response = await fetch('http://localhost:4000/create-checkout-session', {
+    const response = await fetch('http://34.142.195.46/create-checkout-session', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
